@@ -1,0 +1,70 @@
+[0.587s] Invoking command in '/home/samx/ros2_ws/build/person_msgs': CMAKE_PREFIX_PATH=/home/samx/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake /home/samx/ros2_ws/src/person_msgs -DCMAKE_INSTALL_PREFIX=/home/samx/ros2_ws/install/person_msgs
+[1.140s] -- The C compiler identification is GNU 9.4.0
+[1.539s] -- The CXX compiler identification is GNU 9.4.0
+[1.660s] -- Check for working C compiler: /usr/bin/cc
+[1.827s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.842s] -- Detecting C compiler ABI info
+[1.996s] -- Detecting C compiler ABI info - done
+[2.023s] -- Detecting C compile features
+[2.025s] -- Detecting C compile features - done
+[2.032s] -- Check for working CXX compiler: /usr/bin/c++
+[2.179s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.180s] -- Detecting CXX compiler ABI info
+[2.339s] -- Detecting CXX compiler ABI info - done
+[2.357s] -- Detecting CXX compile features
+[2.357s] -- Detecting CXX compile features - done
+[2.378s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.421s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.421s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.712s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[2.725s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.744s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[3.820s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[4.672s] -- Found FastRTPS: /opt/ros/foxy/include  
+[6.395s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.479s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[6.720s] CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[6.720s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[6.720s]   person_msgs --arguments-file
+[6.720s]   /home/samx/ros2_ws/build/person_msgs/rosidl_adapter__arguments__person_msgs.json
+[6.720s]   --output-dir
+[6.720s]   /home/samx/ros2_ws/build/person_msgs/rosidl_adapter/person_msgs
+[6.720s]   --output-file
+[6.720s]   /home/samx/ros2_ws/build/person_msgs/rosidl_adapter/person_msgs.idls)
+[6.721s]   returned error code 1:
+[6.721s] 
+[6.721s]   Error processing 'unit8 age' of 'person_msgs/Person': ''unit8' is an
+[6.721s]   invalid message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$''
+[6.721s] 
+[6.721s]   Traceback (most recent call last):
+[6.721s] 
+[6.721s]     File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[6.721s]       return _run_code(code, main_globals, None,
+[6.721s]     File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+[6.722s]       exec(code, run_globals)
+[6.722s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[6.722s]       sys.exit(main())
+[6.722s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+[6.723s]       abs_idl_file = convert_to_idl(
+[6.723s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[6.723s]       return convert_msg_to_idl(
+[6.723s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[6.724s]       msg = parse_message_string(package_name, input_file.stem, content)
+[6.724s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 516, in parse_message_string
+[6.724s]       Type(type_string, context_package_name=pkg_name),
+[6.724s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 276, in __init__
+[6.724s]       super(Type, self).__init__(
+[6.724s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 204, in __init__
+[6.724s]       raise InvalidResourceName(
+[6.724s] 
+[6.724s]   rosidl_adapter.parser.InvalidResourceName: 'unit8' is an invalid message
+[6.725s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[6.725s] 
+[6.725s] Call Stack (most recent call first):
+[6.725s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[6.725s]   CMakeLists.txt:21 (rosidl_generate_interfaces)
+[6.725s] 
+[6.725s] 
+[6.725s] -- Configuring incomplete, errors occurred!
+[6.725s] See also "/home/samx/ros2_ws/build/person_msgs/CMakeFiles/CMakeOutput.log".
+[6.732s] Invoked command in '/home/samx/ros2_ws/build/person_msgs' returned '1': CMAKE_PREFIX_PATH=/home/samx/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake /home/samx/ros2_ws/src/person_msgs -DCMAKE_INSTALL_PREFIX=/home/samx/ros2_ws/install/person_msgs

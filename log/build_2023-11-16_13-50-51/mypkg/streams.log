@@ -1,0 +1,24 @@
+[1.455s] Invoking command in '/home/samx/ros2_ws/src/mypkg': PYTHONPATH=/home/samx/ros2_ws/build/mypkg/prefix_override:/home/samx/ros2_ws/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/samx/ros2_ws/build/mypkg/build install --record /home/samx/ros2_ws/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed
+[1.723s] running egg_info
+[1.726s] writing ../../build/mypkg/mypkg.egg-info/PKG-INFO
+[1.728s] writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt
+[1.728s] writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt
+[1.729s] writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt
+[1.729s] writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt
+[1.788s] reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[1.789s] writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[1.790s] running build
+[1.791s] running build_py
+[1.792s] copying mypkg/listener.py -> /home/samx/ros2_ws/build/mypkg/build/lib/mypkg
+[1.792s] running install
+[1.793s] running install_lib
+[1.795s] copying /home/samx/ros2_ws/build/mypkg/build/lib/mypkg/listener.py -> /home/samx/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.796s] byte-compiling /home/samx/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg/listener.py to listener.cpython-38.pyc
+[1.797s] running install_data
+[1.797s] running install_egg_info
+[1.800s] removing '/home/samx/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info' (and everything under it)
+[1.800s] Copying ../../build/mypkg/mypkg.egg-info to /home/samx/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info
+[1.806s] running install_scripts
+[1.825s] Installing talker = mypkg.talker:mainlistener script to /home/samx/ros2_ws/install/mypkg/lib/mypkg
+[1.830s] writing list of installed files to '/home/samx/ros2_ws/build/mypkg/install.log'
+[1.853s] Invoked command in '/home/samx/ros2_ws/src/mypkg' returned '0': PYTHONPATH=/home/samx/ros2_ws/build/mypkg/prefix_override:/home/samx/ros2_ws/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/samx/ros2_ws/build/mypkg/build install --record /home/samx/ros2_ws/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed
